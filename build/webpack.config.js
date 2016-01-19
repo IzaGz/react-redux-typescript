@@ -16,7 +16,7 @@ const webpackConfig = {
   devtool: config.compiler_devtool,
   resolve: {
     root: paths.base(config.dir_client),
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx', '.ts', '.tsx']
   },
   module: {}
 }
@@ -133,6 +133,10 @@ webpackConfig.module.loaders = [{
 {
   test: /\.json$/,
   loader: 'json'
+},
+{
+  test: /\.tsx?$/,
+  loader: 'ts-loader'
 }]
 
 // Styles

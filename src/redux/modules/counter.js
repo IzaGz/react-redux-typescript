@@ -1,4 +1,8 @@
 /* @flow */
+import { createAction, handleActions } from 'redux-actions'
+
+import * as Defaults from './default'
+
 // ------------------------------------
 // Constants
 // ------------------------------------
@@ -36,7 +40,7 @@ export const actions = {
   increment,
   doubleAsync
 }
-
+console.log('def', Defaults)
 // ------------------------------------
 // Action Handlers
 // ------------------------------------
