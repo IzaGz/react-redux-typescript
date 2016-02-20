@@ -1,7 +1,7 @@
 /* @flow */
 import { createAction, handleActions } from 'redux-actions'
 
-import * as Defaults from './default'
+import { abc } from './myTypescript'
 
 // ------------------------------------
 // Constants
@@ -40,7 +40,7 @@ export const actions = {
   increment,
   doubleAsync
 }
-console.log('def', Defaults)
+console.log('abc', abc)
 // ------------------------------------
 // Action Handlers
 // ------------------------------------
